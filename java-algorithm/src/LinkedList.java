@@ -48,13 +48,38 @@ public class LinkedList {
         System.out.print(n.data);
     }
 
+    /*
+    * 중복제거
+    * 시간: O(n^2)
+    * 공간: O(1)
+    * */
+    void removeDups() {
+        Node n = header;
+        while (n != null && n.next != null) {
+            Node r = n;
+            while (r.next != null) {
+                if (n.data == r.next.data ) { //
+                    r.next = r.next.next;
+                } else {
+                    r = r.next;
+                }
+            }
+            n = n.next;
+        }
+    }
+
+
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.append(1);
         ll.append(2);
         ll.append(3);
-        ll.append(4);
+        ll.append(3);
+        ll.append(3);
         ll.delete(1); //첫번째 node도 제거 가능함.
+        ll.retrive();
+        System.out.println("");
+        ll.removeDups();
         ll.retrive();
     }
 }
