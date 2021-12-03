@@ -67,6 +67,10 @@ public class LinkedList {
             n = n.next;
         }
     }
+    /*
+    * 뒤부터 k번째 값 반환하기 (재귀호출)
+    * */
+
 
 
     public static void main(String[] args) {
@@ -81,5 +85,6 @@ public class LinkedList {
         System.out.println("");
         ll.removeDups();
         ll.retrive();
+
     }
 }
