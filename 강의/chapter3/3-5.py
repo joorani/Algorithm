@@ -42,10 +42,10 @@ cnt = 0
 
 tot = a[0]
 while True:
-    if tot < m:
-        if rt < n:
-            tot += a[rt]
-            rt += 1
+    if tot< m:
+        if rt <n:
+             tot += a[rt]
+             rt += 1
         else:
             break
     elif tot == m:

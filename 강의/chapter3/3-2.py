@@ -26,11 +26,12 @@ g0en2Ts8eSoft
 #     print(cnt)
 
 
-# 강사풀이
+#강사풀이
 s = input()
 res = 0
 for x in s:
     if x.isdecimal():
-        res = res * 10 + int(x)  # 앞의 0은 무시된다.
+        res = res * 10 + int(x) #앞의 0은 무시된다.
 
 print(res)
+
