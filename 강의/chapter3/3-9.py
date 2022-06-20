@@ -30,7 +30,7 @@ dy = [0, 1, 0, -1]
 cnt = 0
 for i in range(1, n+1):
     for j in range(1, n+1):
-        if all(arㅇr[i][j] > arr[i+dx[k]][j+dy[k]] for k in range(4)):
+        if all(arr[i][j] > arr[i+dx[k]][j+dy[k]] for k in range(4)):
             cnt += 1
 
 print(cnt)
