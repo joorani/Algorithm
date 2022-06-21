@@ -26,7 +26,7 @@ for x in arr:
 dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 
-# all 함수
+# all 함수 -> 모두 참이어야 True를 return한다.
 cnt = 0
 for i in range(1, n+1):
     for j in range(1, n+1):
