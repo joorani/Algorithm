@@ -28,8 +28,8 @@ def DFS(L, sum, tsum):
             tmp = sum
 
     else:
-        DFS(L+1, sum+a[L], tsum+a[L])
-        DFS(L+1, sum, tsum+a[L])
+        DFS(L+1, sum+a[L], tsum+a[L]) #포함시키는 경우
+        DFS(L+1, sum, tsum+a[L]) #포함시키지 않는 경우
 
 if __name__ == '__main__':
     c, n = map(int, input().split())
