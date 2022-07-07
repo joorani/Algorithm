@@ -38,10 +38,10 @@ if __name__ == '__main__':
         a, b = map(int, input().split())
         g[a][b] = 1
     #
-    # for i in range(1, n+1):
-    #     for j in range(1, n+1):
-    #         print(g[i][j], end=' ')
-    #     print()
+    for i in range(1, n+1):
+        for j in range(1, n+1):
+            print(g[i][j], end=' ')
+        print()
     ch = [0]*(n+1)
     cnt = 0
     path = []

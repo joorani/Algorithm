@@ -29,8 +29,8 @@ def DFS(L):
 
 if __name__ == '__main__':
     n, m = map(int, input().split())
-    res = [0]*m #결과값
-    ch = [0]*(n+1) #사용 유무를 확인하는 체크리스트
+    res = [0]*m #결과값을 담을 곳
+    ch = [0]*(n+1) # 중복을 허용하지 않아야 되니깐 사용 유무를 확인하는 체크리스트를 하나 만든다.
     cnt = 0
     DFS(0)
     print(cnt)
