@@ -37,9 +37,10 @@ while True:
         for j in range(4):
             x = tmp[0]+dx[j]
             y = tmp[1]+dy[j]
-            ch[x][y] = 1
-            sum += a[x][y]
-            Q.append((x, y))
+            if ch[x][y] == 0:
+                ch[x][y] = 1
+                sum += a[x][y]
+                Q.append((x, y))
     L += 1
 print(sum)
 
